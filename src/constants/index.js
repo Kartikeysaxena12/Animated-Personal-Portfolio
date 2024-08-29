@@ -31,7 +31,7 @@ export const PROJECTS = [
     title: "CNAPP Dynamic Dashboard",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "This project is a dynamic, interactive dashboard built with React, providing a customizable and user-friendly interface for data visualization and management. The application allows users to add, search, and manage widgets within different categories.",
     technologies: ["Javascript", "TailwindCSS", "React", "Zustand"],
   },
   {

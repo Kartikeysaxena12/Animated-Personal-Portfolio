@@ -21,16 +21,19 @@ const Music = () => {
               />
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
-              <h6 className="mb-2 mt-2 font-semibold">{music.title}</h6>
+              <h6 className="mb-2 mt-3 font-semibold">{music.title}</h6>
               <p className="mb-4 text-neutral-400">{music.description}</p>
-              {music.setup.map((set, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900  py-1 text-sm  font-semibold text-purple-500 hover:text-neutral-900 hover:bg-purple-500 hover:font-semibold"
-                >
-                  {set}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-2">
+                {music.setup.map((set, index) => (
+                  <span
+                    key={index}
+                    className=" rounded-md bg-neutral-900   text-sm  font-semibold text-neutral-300
+                  p-2 hover:text-neutral-900 hover:bg-purple-500 hover:font-semibold"
+                  >
+                    {set}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className="mt-10 m-8">
               <h5 className="font-semibold text-neutral-400">Available on:</h5>
@@ -41,7 +44,7 @@ const Music = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-500 hover:text-purple-300"
+                      className="text-neutral-300 hover:text-purple-300"
                     >
                       {link.name}
                     </a>

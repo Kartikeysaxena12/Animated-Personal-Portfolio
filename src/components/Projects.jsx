@@ -20,17 +20,19 @@ const Projects = () => {
                 className="rounded-lg sm:justify-center"
               />
             </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            <div className="w-full max-w-xl  lg:w-3/4">
               <h6 className="mb-2 mt-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900  py-1 text-sm  font-semibold text-purple-500 hover:text-neutral-900 hover:bg-purple-500 hover:font-semibold"
-                >
-                  {tech}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="mr-2 rounded-md bg-neutral-900  py-1 text-sm p-2 font-semibold text-neutral-300 hover:text-neutral-900 hover:bg-purple-500 hover:font-semibold"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

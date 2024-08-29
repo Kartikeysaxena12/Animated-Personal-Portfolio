@@ -39,7 +39,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl text-transparent "
+              className="bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-500 bg-clip-text text-4xl text-transparent "
             >
               Frontend Developer
             </motion.span>
