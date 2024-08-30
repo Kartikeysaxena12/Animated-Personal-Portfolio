@@ -1,17 +1,29 @@
 import React from "react";
 import { MUSIC } from "../constants/index";
-
+import { motion } from "framer-motion";
 const Music = () => {
   return (
     <div className="border-p border-neutral-900 pb-4">
-      <h1 className="text-center text-4xl text-neutral-400 my-20">Music</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        className="text-center text-4xl text-neutral-400 my-20"
+      >
+        Music
+      </motion.h1>
       <div>
         {MUSIC.map((music, index) => (
           <div
             key={index}
             className="mb-8 mt-8 flex flex-wrap lg:justify-center"
           >
-            <div className="w-full lg:w-1/4 ">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4 "
+            >
               <img
                 src={music.image}
                 width={200}
@@ -19,8 +31,13 @@ const Music = () => {
                 alt={music.title}
                 className="rounded-lg sm:justify-center"
               />
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
               <h6 className="mb-2 mt-3 font-semibold">{music.title}</h6>
               <p className="mb-4 text-neutral-400">{music.description}</p>
               <div className="flex flex-wrap gap-2">
@@ -34,8 +51,13 @@ const Music = () => {
                   </span>
                 ))}
               </div>
-            </div>
-            <div className="mt-10 m-8">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1.25 }}
+              className="mt-10 m-8"
+            >
               <h5 className="font-semibold text-neutral-400">Available on:</h5>
               <ul className="list-disc pl-4">
                 {music.Links.map((link, index) => (
@@ -51,7 +73,7 @@ const Music = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

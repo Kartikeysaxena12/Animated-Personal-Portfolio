@@ -1,17 +1,30 @@
 import React from "react";
 import { PROJECTS } from "../constants";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <div className="border-p border-neutral-900 pb-4">
-      <h1 className="text-center text-4xl text-neutral-400 my-20">Projects</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="text-center text-4xl text-neutral-400 my-20"
+      >
+        Projects
+      </motion.h1>
       <div>
         {PROJECTS.map((project, index) => (
           <div
             key={index}
             className="mb-8 mt-8 flex flex-wrap lg:justify-center"
           >
-            <div className="w-full lg:w-1/4 ">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4 "
+            >
               <img
                 src={project.image}
                 width={250}
@@ -19,8 +32,13 @@ const Projects = () => {
                 alt={project.title}
                 className="rounded-lg sm:justify-center"
               />
-            </div>
-            <div className="w-full max-w-xl  lg:w-3/4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl  lg:w-3/4"
+            >
               <h6 className="mb-2 mt-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="flex flex-wrap gap-2">
@@ -33,24 +51,26 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-            </div>
-            <div className="mt-10 m-8">
-              <h5 className="font-semibold text-neutral-400">Available on:</h5>
-              <ul className="list-disc pl-4">
-                {project.Links.map((link, index) => (
-                  <li key={index}>
-                    <a
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-neutral-300 hover:text-purple-300"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <div className="mt-10 m-8">
+                <h5 className="font-semibold text-neutral-400">
+                  Available on:
+                </h5>
+                <ul className="list-disc pl-4">
+                  {project.Links.map((link, index) => (
+                    <li key={index}>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-neutral-300 hover:text-purple-300"
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
           </div>
         ))}
       </div>

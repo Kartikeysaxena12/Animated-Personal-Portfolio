@@ -26,7 +26,7 @@ const Hero = () => {
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:items-start ml-6">
             <motion.h1
               variants={container(0)}
               initial="hidden"
@@ -61,7 +61,7 @@ const Hero = () => {
               animate="visible"
               src={Kartik}
               alt="Kartik"
-              className="w-2/3 rounded-xl"
+              className="w-2/3 rounded-xl lg:ml-32"
             />
           </div>
         </div>

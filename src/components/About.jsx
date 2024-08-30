@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-p border-neutral-900 p-4">
+    <div className="border-p border-neutral-900 p-4 ">
       <h1 className="my-20 text-center justify-center text-4xl">
         About
         <span className="text-neutral-500"> Me</span>
@@ -28,7 +28,7 @@ const About = () => {
           className="w-full lg:w-1/2 "
         >
           <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-36 font-light tracking-tight">
+            <p className="my-2 max-w-xl py-24 font-light tracking-tight">
               {ABOUT_TEXT}
             </p>
           </div>
