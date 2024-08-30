@@ -34,6 +34,23 @@ const Projects = () => {
                 ))}
               </div>
             </div>
+            <div className="mt-10 m-8">
+              <h5 className="font-semibold text-neutral-400">Available on:</h5>
+              <ul className="list-disc pl-4">
+                {project.Links.map((link, index) => (
+                  <li key={index}>
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-300 hover:text-purple-300"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>

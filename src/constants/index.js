@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project-3.png";
 import saveher from "../assets/Music/SAVOUR.png";
 import holihigh from "../assets/Music/IMG_0550.png";
 import curtains from "../assets/Music/IMG_2056.jpg";
+import { FaFilePdf } from "react-icons/fa";
 
 export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting robust and scalable web applications. With an year of hands-on experience, I have honed my skills in front-end technologies like React.js and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -33,6 +34,12 @@ export const PROJECTS = [
     description:
       "This project is a dynamic, interactive dashboard built with React, providing a customizable and user-friendly interface for data visualization and management. The application allows users to add, search, and manage widgets within different categories.",
     technologies: ["Javascript", "TailwindCSS", "React", "Zustand"],
+    Links: [
+      {
+        name: "Github",
+        url: "https://open.spotify.com/album/6md0Tj2MEOnaljkBRCcXGz?si=7t3sCNohTa-eGKwsURRekA",
+      },
+    ],
   },
   {
     title: "SmartTask Oraganizer",
@@ -46,6 +53,12 @@ export const PROJECTS = [
       "Node.js",
       "MongoDB",
     ],
+    Links: [
+      {
+        name: "Github",
+        url: "https://github.com/Kartikeysaxena12/Task-Manager-CRUD-Based",
+      },
+    ],
   },
   {
     title: "Data Visualization using Websockets",
@@ -58,6 +71,12 @@ export const PROJECTS = [
       "ReactThreeFiber",
       "Javascript",
       "Node.js",
+    ],
+    Links: [
+      {
+        name: "Github",
+        url: "https://github.com/Kartikeysaxena12/Data-Visualization-Dashboard-Using-Websockets-And-ReactThreeFiber",
+      },
     ],
   },
 ];
@@ -144,7 +163,12 @@ export const MUSIC = [
 ];
 
 export const CONTACT = {
-  address: "1/418 Vastukhand Gomtinagar Lucknow ",
+  Resume: [
+    {
+      name: "Resume",
+      url: "https://drive.google.com/file/d/1S1AgKXQ47-OLyjBRIjEDBsTl_OkS1XPr/view?usp=sharing",
+    },
+  ],
   phoneNo: "+8318717147 ",
   email: "kartikeyasaxena99@gmail.com",
 };
