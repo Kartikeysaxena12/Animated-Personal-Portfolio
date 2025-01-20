@@ -1,14 +1,62 @@
-import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-3.png";
+import project1 from "../assets/projects/austo_motor.png";
+import project2 from "../assets/projects/cnapp.png";
+import project3 from "../assets/projects/smartask.png";
 import saveher from "../assets/Music/SAVOUR.png";
 import holihigh from "../assets/Music/IMG_0550.png";
 import curtains from "../assets/Music/IMG_2056.jpg";
 import { FaFilePdf } from "react-icons/fa";
 
-export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting robust and scalable web applications. With an year of hands-on experience, I have honed my skills in front-end technologies like React.js and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = [
+  "I am a dedicated ",
+  <strong>Data Scientist</strong>,
+  " with a strong foundation in ",
+  <strong>frontend development</strong>,
+  ", bringing a unique blend of analytical expertise and user-focused design skills.",
+  <br />,
+  "My experience spans crafting responsive UIs with ",
+  <strong>React.js</strong>,
+  " and ",
+  <strong>Tailwind CSS</strong>,
+  ", as well as conducting in-depth statistical analysis and predictive modeling using ",
+  <strong>Python</strong>,
+  ", ",
+  <strong>Pandas</strong>,
+  ", and ",
+  <strong>Scikit-learn</strong>,
+  ".",
+];
 
-export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for creating efficient and user-friendly web applications. With an year of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to projects.`;
+export const ABOUT_TEXT = [
+  "I am a versatile professional with expertise in ",
+  <strong>Data Science</strong>,
+  " and ",
+  <strong>Frontend Development</strong>,
+  ", leveraging analytical and technical skills to deliver impactful solutions.",
+  <br />,
+  "My journey began with creating seamless user experiences using technologies like ",
+  <strong>React.js</strong>,
+  ", ",
+  <strong>MongoDB</strong>,
+  ", and ",
+  <strong>Tailwind CSS</strong>,
+  ", where I honed my ability to design intuitive and efficient applications.",
+  <br />,
+  "Expanding into data science, I have applied advanced techniques such as ",
+  <strong>statistical modeling</strong>,
+  ", ",
+  <strong>ANOVA</strong>,
+  ", and ",
+  <strong>data visualization</strong>,
+  " to solve complex problems and optimize processes.",
+  <br />,
+  "My dual expertise enables me to build scalable, data-driven web applications that provide actionable insights and superior user experiences.",
+  <br />,
+  "I thrive on bridging the gap between ",
+  <strong>data analytics</strong>,
+  " and ",
+  <strong>frontend functionality</strong>,
+  ", ensuring both technical precision and practical usability.",
+];
 
 export const EXPERIENCES = [
   {
@@ -29,8 +77,27 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "CNAPP Dynamic Dashboard",
+    title: "Austo Motor Automobile Company",
     image: project1,
+    description:
+      "A comprehensive analysis of Austo Motor Company's customer data to enhance their marketing campaign and improve customer experience across their SUV, Sedan, and Hatchback models.",
+    technologies: [
+      "Python",
+      "Numpy & Pandas",
+      "EDA",
+      "Statistical Analysis",
+      "Business Analytics",
+    ],
+    Links: [
+      {
+        name: "Github",
+        url: "https://github.com/Kartikeysaxena12/Austo_Automobile_Python_DataScience_Project",
+      },
+    ],
+  },
+  {
+    title: "CNAPP Dynamic Dashboard",
+    image: project2,
     description:
       "This project is a dynamic, interactive dashboard built with React, providing a customizable and user-friendly interface for data visualization and management. The application allows users to add, search, and manage widgets within different categories.",
     technologies: ["Javascript", "TailwindCSS", "React", "Zustand"],
@@ -43,7 +110,7 @@ export const PROJECTS = [
   },
   {
     title: "SmartTask Oraganizer",
-    image: project2,
+    image: project3,
     description:
       "An application for managing tasks and projects, with features such as task creation, updation, deletion as per category, carousel display of task cards of different dates, task and in progress marking.",
     technologies: [
@@ -57,25 +124,6 @@ export const PROJECTS = [
       {
         name: "Github",
         url: "https://github.com/Kartikeysaxena12/Task-Manager-CRUD-Based",
-      },
-    ],
-  },
-  {
-    title: "Data Visualization using Websockets",
-    image: project3,
-    description:
-      "Developed a real-time data visualization dashboard using React.js for the frontend, websockets for bi-direcitonal communication between the frontend and the backend",
-    technologies: [
-      "React.js",
-      "Websockets",
-      "ReactThreeFiber",
-      "Javascript",
-      "Node.js",
-    ],
-    Links: [
-      {
-        name: "Github",
-        url: "https://github.com/Kartikeysaxena12/Data-Visualization-Dashboard-Using-Websockets-And-ReactThreeFiber",
       },
     ],
   },

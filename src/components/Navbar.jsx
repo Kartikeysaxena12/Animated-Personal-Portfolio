@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
         <div className="m-16 flex items-center justify-center gap-4 text-2xl ">
           <a
-            href="http://www.linkedin.com/in/kartikeya-saxena-frontend"
+            href="https://www.linkedin.com/in/kartikeya-saxena-data/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-white"
@@ -37,7 +37,7 @@ const Navbar = () => {
             <FaGithubSquare />
           </a>
           <a
-            href="https://twitter.com/KartikeyaS75363"
+            href="https://x.com/kartik69Saxena"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-white"

@@ -1,4 +1,8 @@
 import React from "react";
+import { SiJupyter } from "react-icons/si";
+import { SiNumpy } from "react-icons/si";
+import { SiScikitlearn } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
@@ -36,6 +40,38 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiJupyter className="text-7xl text-orange-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiScikitlearn className="text-7xl text-blue-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiNumpy className="text-7xl text-cyan-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <DiMsqlServer className="text-7xl text-blue-400" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
           initial="initial"

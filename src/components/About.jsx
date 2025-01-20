@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-p border-neutral-900 p-4 ">
+    <div className="border-b border-neutral-900 p-4 ">
       <h1 className="my-20 text-center justify-center text-4xl">
         About
         <span className="text-neutral-500"> Me</span>

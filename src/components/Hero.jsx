@@ -1,5 +1,5 @@
 import React from "react";
-import { HERO_CONTENT } from "../constants";
+import { HERO_CONTENT } from "../constants/index";
 import Kartik from "../assets/Kartik.jpg";
 import { motion } from "framer-motion";
 
@@ -41,7 +41,7 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-500 bg-clip-text text-4xl text-transparent "
             >
-              Frontend Developer
+              Data Scientist | Data Analyst | Frontend Developer
             </motion.span>
             <motion.p
               variants={container(1)}
