@@ -4,6 +4,7 @@ import project3 from "../assets/projects/smartask.png";
 import saveher from "../assets/Music/SAVOUR.png";
 import holihigh from "../assets/Music/IMG_0550.png";
 import curtains from "../assets/Music/IMG_2056.jpg";
+//const zingaro = "/Videos/Zingaro_Recording.mp4";
 import { FaFilePdf } from "react-icons/fa";
 
 export const HERO_CONTENT = [
